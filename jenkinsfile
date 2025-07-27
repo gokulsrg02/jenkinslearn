@@ -4,6 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 echo 'Building the project....'
+                echo "DEBUG: parameter foo = ${Test}"
             }
         }
         stage('deploy') {
